@@ -2,3 +2,4 @@ caption always "%{WK}%?%-Lw%?%{mw}%n*%f %t%?(%u)%?%{WK}%?%+Lw %= %{cK}%u@%H %{yK
 #always "%{WK}%?%-Lw%?%{mw}%n*%f %?%t%?%{WK}%+Lw"
 altscreen on
 #mousetrack on
+defscrollback 30000
