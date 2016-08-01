@@ -58,8 +58,14 @@ function SetCppOpts()
   set syntax=java
 endfunction
 
+function SetYamlOpts()
+  set shiftwidth=2
+  set syntax=yaml
+endfunction
+
 autocmd BufNewFile,BufRead *.py call SetPythonOpts()
 autocmd BufNewFile,BufRead *.groovy call SetGroovyOpts()
 autocmd BufNewFile,BufRead *.gradle call SetGroovyOpts()
 autocmd BufNewFile,BufRead *.java call SetJavaOpts()
 autocmd BufNewFile,BufRead *.cpp,*.c call SetCppOpts()
+autocmd BufNewFile,BufRead *.yml,*.yaml call SetYamlOpts()
