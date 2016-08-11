@@ -8,4 +8,4 @@ export MANPAGER="/usr/bin/most -s"
 alias ll='ls -alFh'
 
 #add color to grep
-export GREP_OPTIONS='--color=auto'
+#export GREP_OPTIONS='--color=auto'
