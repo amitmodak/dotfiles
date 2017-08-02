@@ -3,6 +3,7 @@ set smartindent
 
 set expandtab
 set shiftwidth=3
+set modeline
 
 set bg=dark
 
