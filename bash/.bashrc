@@ -4,6 +4,11 @@ PS1='${debian_chroot:+($debian_chroot)}\[\e[0;32m\]\u\[\e[m\]\[\e[0;35m\]@\[\e[m
 #apt-get install most
 export MANPAGER="/usr/bin/most -s"
 
+#https://tosbourn.com/view-markdown-files-terminal/
+rmd () {
+    pandoc $1 | lynx -stdin
+}
+
 #alias
 alias ll='ls -alFh'
 alias grep='grep --color=auto'
