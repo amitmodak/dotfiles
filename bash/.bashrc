@@ -1,4 +1,5 @@
-PS1='${debian_chroot:+($debian_chroot)}\[\e[0;32m\]\u\[\e[m\]\[\e[0;35m\]@\[\e[m\]\[\e[0;36m\]\h\[\e[m\]:\[\e[1;34m\]\w $ \[\e[m\]'
+# https://stackoverflow.com/questions/15883416/adding-git-branch-on-the-bash-command-prompt
+PS1='${debian_chroot:+($debian_chroot)}\[\e[0;34m\]\u\[\e[m\]\[\e[0;35m\]@\[\e[m\]\[\e[0;36m\]\h\[\e[m\]:\[\e[1;34m\]\w\[\e[m\]\[\e[1;31m\]$(__git_ps1 " (%s)")\[\e[m\] \[\e[1;36m\]$ \[\e[m\]'
 
 #add color to manpages
 #apt-get install most
