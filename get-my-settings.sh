@@ -2,13 +2,16 @@
 
 sudo apt-get update
 sudo apt-get install -y \
-   curl \
-   git \
-   most \
-   pandoc \
-   tree \
-   vim \
-   wget
+    curl \
+    git \
+    lynx \
+    most \
+    pandoc \
+    screen \
+    tree \
+    vim \
+    wget \
+    zip
 
 curl -L https://github.com/amitmodak/dotfiles/raw/master/screen/.screenrc > ~/.screenrc
 curl -L https://github.com/amitmodak/dotfiles/raw/master/vim/.vimrc > ~/.vimrc
