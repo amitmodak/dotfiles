@@ -3,6 +3,7 @@
 sudo apt-get update
 sudo apt-get install -y \
     curl \
+    docker.io \
     git \
     lynx \
     most \
@@ -13,6 +14,9 @@ sudo apt-get install -y \
     wget \
     zip
 
+sudo usermod -aG docker ${USER}
+newgrp docker
+
 curl -L https://github.com/amitmodak/dotfiles/raw/master/screen/.screenrc > ~/.screenrc
 curl -L https://github.com/amitmodak/dotfiles/raw/master/vim/.vimrc > ~/.vimrc
 
@@ -22,3 +26,5 @@ cp ~/.bashrc ~/.bashrc.$(date +%s)
 curl -L https://github.com/amitmodak/dotfiles/raw/master/bash/.bashrc >> ~/.bashrc
 
 source ~/.bashrc
+
+echo "Please source ~/.bashrc to activate customizations"

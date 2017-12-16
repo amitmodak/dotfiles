@@ -12,6 +12,14 @@ rmd () {
     pandoc $1 | lynx -stdin
 }
 
+drm () {
+    docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
+}
+
+drmi () {
+    docker rmi -f $(docker images -a -q)
+}
+
 #alias
 alias ll='ls -alFh'
 alias grep='grep --color=auto'
