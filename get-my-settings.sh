@@ -1,4 +1,5 @@
 #!/bin/bash
+# vim:filetype=sh:expandtab:tabstop=4:shiftwidth=4:
 
 sudo apt-get update
 sudo apt-get install -y \
