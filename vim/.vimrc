@@ -48,6 +48,12 @@ colorscheme slate
 "Toggle wrap
 :nnoremap <Leader>w :set wrap!<CR>
 
+execute pathogen#infect()
+
+"https://github.com/fatih/vim-go/issues/282
+"Enable filetype plugins
+filetype plugin on
+
 "function SetPythonOpts()
 "  set shiftwidth=4
 "endfunction
