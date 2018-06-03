@@ -54,6 +54,16 @@ execute pathogen#infect()
 "Enable filetype plugins
 filetype plugin on
 
+" https://stackoverflow.com/questions/30658473/open-vim-with-default-code
+function SetPy()
+    let ftype = &ft | execute 'silent! 1s:.*:#!/usr/bin/env ' . ftype
+    if line("$") == 1
+        call append(1, "# vim:filetype=python:expandtab:tabstop=4:shiftwidth=4:")
+    endif
+endfunction
+
+autocmd BufNewFile *.py call SetPy()
+
 "function SetPythonOpts()
 "  set shiftwidth=4
 "endfunction
