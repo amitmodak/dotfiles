@@ -54,7 +54,7 @@ execute pathogen#infect()
 "Enable filetype plugins
 filetype plugin on
 
-" https://stackoverflow.com/questions/30658473/open-vim-with-default-code
+"https://stackoverflow.com/questions/30658473/open-vim-with-default-code
 function SetPy()
     let ftype = &ft | execute 'silent! 1s:.*:#!/usr/bin/env ' . ftype
     if line("$") == 1
@@ -63,6 +63,12 @@ function SetPy()
 endfunction
 
 autocmd BufNewFile *.py call SetPy()
+
+"pep8 formatting
+"https://stackoverflow.com/questions/15285032/autopep8-with-vim
+autocmd FileType python setlocal formatprg=autopep8\ -
+map <F8> gggqG
+
 
 "function SetPythonOpts()
 "  set shiftwidth=4
