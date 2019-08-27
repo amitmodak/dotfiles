@@ -1,3 +1,4 @@
+# https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 source ~/.git-prompt.sh
 
 # https://stackoverflow.com/questions/15883416/adding-git-branch-on-the-bash-command-prompt
